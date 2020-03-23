@@ -1,51 +1,67 @@
 <!------ Include the above in your HEAD tag ---------->
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+  integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <link rel="stylesheet" href="/stylesheets/tables.css">
-<body class="home">
-    <div class="container-fluid display-table">
-        <div class="row display-table-row">
-            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
-                <div class="logo">
-                    <a hef="#"><img src="https://cdn1.iconfinder.com/data/icons/instagram-ui-colored/48/JD-17-512.png" alt="admin_logo" class="hidden-xs hidden-sm">
-                        <p style="font-size: 25px; color: white;">ADMIN</p>
-                    </a>
 
-                </div>
-                <div class="navi">
-                    <ul>
-                        <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
-                        <li><a href="/eventMaster"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Event Master</span></a></li>
-                        <li><a href="/party"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Party Master</span></a></li>
-                        <li><a href="/allStalls"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Stall Allocation</span></a></li>
-                        <li><a href="/moneyReceipt"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Payment Window</span></a></li>
-                        <li><a href="/receipt"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Money Receipt</span></a></li>
+<body class="home" onload="startTime()">
+  <div class="container-fluid display-table">
+    <div class="row display-table-row">
+      <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+        <div class="logo">
+          <a hef="#"><img src="https://cdn1.iconfinder.com/data/icons/instagram-ui-colored/48/JD-17-512.png"
+              alt="admin_logo" class="hidden-xs hidden-sm">
+            <p style="font-size: 25px; color: white;">ADMIN</p>
+            <div id="txt"></div>
+          </a>
 
-
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Key
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                              </div> -->
-                        <li><a href="/partyLedger"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Party Ledger</span></a></li>
-                        <li><a href="/stallDisbursement"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Stall Disbursement</span></a></li>
-                        <li><a href="/collections"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Collection</span></a></li>
-                        <li><a href="/expenses"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Expenses</span></a></li>
-                        <li><a href="/admin"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Logout</span></a></li>
-                    </ul>
-                </div>  
-            </div>
-            <div class="col-md-10 col-sm-11 display-table-cell v-align">
-                
-
-            </div>
         </div>
+        <div class="navi">
+          <ul>
+            <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Home</span></a></li>
+            <li><a href="/eventMaster"><i class="fa fa-tasks" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Event Master</span></a></li>
+            <li><a href="/party"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Party
+                  Master</span></a></li>
+            <li><a href="/allStalls"><i class="fa fa-bar-chart" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Stall Allocation</span></a></li>
+            <li><a href="/moneyReceipt"><i class="fa fa-bar-chart" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Expenses Window</span></a></li>
+            <li><a href="/receipt"><i class="fa fa-bar-chart" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Money Receipt</span></a></li>
 
+
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Key
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div> -->
+            <li><a href="/partyLedger"><i class="fa fa-user" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Party Ledger</span></a></li>
+            <li><a href="/stallDisbursement"><i class="fa fa-user" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Stall Disbursement</span></a></li>
+            <li><a href="/collections"><i class="fa fa-user" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Collection</span></a></li>
+            <li><a href="/expenses"><i class="fa fa-calendar" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Expenses</span></a></li>
+            <li><a href="/admin"><i class="fa fa-cog" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Logout</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-10 col-sm-11 display-table-cell v-align">
+
+
+      </div>
     </div>
+
+  </div>
 
 </body>
 
@@ -54,7 +70,7 @@
 <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 
 <script>
-      //custom swal by Pop.fire instead Swal.fire for popups
+  //custom swal by Pop.fire instead Swal.fire for popups
 
   const Pop = Swal.mixin({
     customClass: {
@@ -76,7 +92,7 @@
     toast: true,
     position: 'top',
     showConfirmButton: false,
-    timer: 4000,
+    timer: 3000,
     timerProgressBar: true,
     onOpen: (toast) => {
       toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -84,3 +100,28 @@
     }
   });
 </script>
+
+<script>
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+      h + " : " + m + " : " + s;
+    var t = setTimeout(startTime, 500);
+  }
+  function checkTime(i) {
+    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+    return i;
+  }
+</script>
+
+<style>
+  .dropdown-item {
+    color: white;
+    background-color: black;
+  }
+</style>

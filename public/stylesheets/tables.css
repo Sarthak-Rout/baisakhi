@@ -7,6 +7,11 @@ body{
     overflow-x: hidden;
 }
 
+#txt{
+    color: #fff;
+    font-size: 30px;
+}
+
 .admin-dashboard{
     background-color: #0e1a35   ;
     padding: 0;
