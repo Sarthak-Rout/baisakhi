@@ -2,84 +2,83 @@
         crossorigin="anonymous">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  <div class="row">
-     <div class="col-md-2 admin-dashboard">
+     <div class="col-md-2 admin-dashboard" style="margin: auto;">
          <%- include('tables') %>
      </div>
-     <div class="col-md-10">
+     <div class="col-md-10" style="padding: 30px;">
         <div class = "container">
             <div class="wrapper card">
                 <form action="/moneyReceipt" method="POST" >
-                    <h3 class="form-signin-heading">Expenses WINDOW</h3>
+                    <h3 class="form-signin-heading">EXPENSES WINDOW</h3>
                 <hr class="colorgraph"><br>
                 <div class="row">
-                    <div class="col-md-2 offset-md-1">
+                    <div class="col-md-2 " style="margin: auto;">
                         <label><b>Event:</b></label>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                         <input type="text" class="form-control" name="nameEvent" placeholder="Event Name" required="" autofocus="" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 offset-md-1">
+                    <div class="col-md-2 " style="margin: auto;">
                         <label><b>Head:</b></label>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                         <input type="text" class="form-control" name="head" placeholder="Location" required="" autofocus="" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 offset-md-1">
+                    <div class="col-md-2 " style="margin: auto;">
                         <label><b>Sub Head:</b></label>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                         <input type="text" class="form-control" name="subHead" placeholder="Location" required="" autofocus="" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 offset-md-1">
+                    <div class="col-md-2 " style="margin: auto;">
                         <label><b>Paid To:</b></label>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                         <input type="text" class="form-control" name="paidTo" placeholder="Location" required="" autofocus="" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 offset-md-1">
+                    <div class="col-md-2 " style="margin: auto;">
                         <label><b>Amount:</b></label>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                         <input type="number" class="form-control" name="amount" placeholder="Location" required="" autofocus="" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 offset-md-1">
+                    <div class="col-md-2 " style="margin: auto;">
                         <label><b>Payment By:</b></label>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                         <input type="text" class="form-control" name="paymentBy" placeholder="Location" required="" autofocus="" />
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 offset-md-1">
+                    <div class="col-md-2 " style="margin: auto;">
                         <label><b>Payment Date:</b></label>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                         <input type="date" class="form-control" name="paymentDate" placeholder="" required="" autofocus="" />
                     </div>
                 </div> <br>
 
-                <div class="row justify-content-end">
-                    <div class="col-md-2 offset-md-1"></div>
-                    <div class="col-md-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-2 " style="margin: auto;"></div>
+                    <div class="col-md-5">
                         <button class="btn btn-lg btn-primary btn-block" type="Submit">Add</button>
                     </div>
-                    <div class="col-md-1"></div>
                 </div>
 
                 </form>
@@ -92,7 +91,7 @@
 
  <style>
     .wrapper {
-      padding: 12px 20px;
+      padding: 12px 50px;
       margin: 20px;
       border: 3px solid #f1f1f1;
       border-radius: 15px;

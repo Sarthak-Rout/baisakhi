@@ -53,7 +53,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">PREVIOUS PAYMENTS</h5>
+          <h5 class="modal-title" id="exampleModalLabel">ENTER PAYMENT AMOUNT</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -89,8 +89,11 @@
 
     .form-group{
   padding: 12px 20px;
+  }
 
-}
+  .dataTables_wrapper{
+    padding: 20px;
+  }
 </style>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
@@ -145,6 +148,17 @@
       }
     });
   });
+</script>
+
+<script>
+  $(document).ready(function() {
+    $('#stallTable').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+             'excel', 'pdf', 'print'
+        ]
+    } );
+} );
 </script>
 
 
